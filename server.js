@@ -31,9 +31,8 @@ app.post("/login", function (req, res) {
             success: false,
             message: "Invalid email or password"
         })
+
     }
 })
 
-app.listen(4000, function () {
-    console.log("Server started on port 4000")
-})
+module.exports = app
